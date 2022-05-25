@@ -3,6 +3,7 @@ package com.example.booking;
 import com.example.booking.model.*;
 import com.example.booking.service.BookingServiceImpl;
 import com.example.booking.service.IBookingService;
+import com.module3.B;
 
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAccessor;
@@ -32,6 +33,8 @@ public class BookingApplication {
 		seats.add("s1");
 		Ticket ticket = bookingService.bookTicket(show.getTheatre(), movie, date, seats);
 		System.out.println(ticket);
+		B b = new B();
+		b.greeting();
 	}
 	static void populateData(){
 		Set<City> cities = new HashSet<>();
